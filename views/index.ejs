@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="A front-end template that helps you build fast, modern mobile web apps."
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0"
+    />
+    <title>COVID-19 HelpDesk</title>
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes" />
+    <link rel="icon" sizes="192x192" href="../assets/images/head icon.jfif" />
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-title" content="Material Design Lite" />
+    <link
+      rel="apple-touch-icon-precomposed"
+      href="../assets/images/head icon.jfif"
+    />
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta
+      name="msapplication-TileImage"
+      content="images/touch/ms-touch-icon-144x144-precomposed.png"
+    />
+    <meta name="msapplication-TileColor" content="#3372DF" />
+
+    <link rel="shortcut icon" href="../assets/images/head icon.jfif" />
+
+    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+    <!--
+    <link rel="canonical" href="http://www.example.com/">
+    -->
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      rel="stylesheet"
+      href="https://code.getmdl.io/1.3.0/material.deep_purple-pink.min.css"
+    />
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+    <style>
+      #view-source {
+        position: fixed;
+        display: block;
+        right: 0;
+        bottom: 0;
+        margin-right: 40px;
+        margin-bottom: 40px;
+        z-index: 900;
+      }
+    </style>
+  </head>
+  <body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <header
+        class="mdl-layout__header mdl-layout__header--scroll mdl-color--primary"
+      >
+        <div class="mdl-layout--large-screen-only mdl-layout__header-row"></div>
+        <div class="mdl-layout--large-screen-only mdl-layout__header-row">
+          <h3>COVID-19 HELPDESK</h3>
+        </div>
+        <div class="mdl-layout--large-screen-only mdl-layout__header-row"></div>
+        <div
+          class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark"
+        >
+          <a href="#overview" class="mdl-layout__tab is-active">Overview</a>
+          <a href="#details" class="mdl-layout__tab">Details</a>
+          <a href="#test" class="mdl-layout__tab">Test</a>
+
+          <!--
+                    Button left for darkmode toggling
+
+                <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-shadow--4dp mdl-color--accent" id="add">
+                    <i class="material-icons" role="presentation">add</i>
+                    <span class="visuallyhidden">Add</span>
+                </button>
+                -->
+        </div>
+      </header>
+      <main class="mdl-layout__content">
+        <div class="mdl-layout__tab-panel is-active" id="overview">
+          <section
+            class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp"
+          >
+            <header
+              class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white"
+            >
+              <img
+                height="215px"
+                src="../assets/images/Corona.jpeg"
+                alt="Corona Pic"
+              />
+            </header>
+            <div
+              class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone"
+            >
+              <div class="mdl-card__supporting-text">
+                <h4>Details</h4>
+                This page provides the information of the Corona Virus (
+                COVID-19), the symptoms, prevention and also a test for...
+              </div>
+              <div class="mdl-card__actions">
+                <a href="#details" class="mdl-button">Read Details</a>
+              </div>
+            </div>
+          </section>
+          <section class="section--footer mdl-color--white mdl-grid">
+            <div
+              class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone"
+              style="width: 170px;"
+            >
+              <div
+                class="section__circle-container__circle mdl-color--accent section__circle--big"
+              >
+                <img
+                  class="profile"
+                  src="../assets/images/Ajal Pic.jpeg"
+                  alt="Ajal's Pic"
+                />
+              </div>
+            </div>
+            <div
+              class="section__text mdl-cell mdl-cell--4-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone"
+            >
+              <h5>Ajal P</h5>
+              First Year B.Tech CSE @SOE, CUSAT <br /><br />
+              <a
+                href="https://www.linkedin.com/in/ajal-p-95537a191/"
+                target="_blank"
+                ><img
+                  class="icons"
+                  src="../assets/images/linkedin.png"
+                  alt="LinkedIn Profile"
+              /></a>
+              &nbsp;
+              <a href="https://github.com/Ajal333" target="_blank"
+                ><img
+                  class="icons"
+                  src="../assets/images/github.png"
+                  alt="GitHub Profile"
+              /></a>
+              &nbsp;
+              <a href="https://twitter.com/ajmessial10?s=09" target="_blank"
+                ><img
+                  class="icons"
+                  src="../assets/images/twitter.png"
+                  alt="Twitter Profile"
+              /></a>
+              &nbsp;
+              <a href="https://www.instagram.com/im_ajal/?hl=en" target="_blank"
+                ><img
+                  class="icons"
+                  src="../assets/images/instagram.png"
+                  alt="IG Profile"
+              /></a>
+            </div>
+            <div
+              class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone"
+              style="width: 170px;"
+            >
+              <div
+                class="section__circle-container__circle mdl-color--accent section__circle--big"
+              >
+                <img
+                  class="profile"
+                  src="../assets/images/Nandanunni Pic.jpg"
+                  alt="Nandanunni's Pic"
+                />
+              </div>
+            </div>
+            <div
+              class="section__text mdl-cell mdl-cell--4-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone"
+            >
+              <h5>A S Nandanunni</h5>
+              First Year B.Tech CSE @SOE, CUSAT <br /><br />
+              <a
+                href="https://www.linkedin.com/in/nandanunni-a-s-258b10193/"
+                target="_blank"
+                ><img
+                  class="icons"
+                  src="../assets/images/linkedin.png"
+                  alt="LinkedIn Profile"
+              /></a>
+              &nbsp;
+              <a href="https://github.com/nandan-unni" target="_blank"
+                ><img
+                  class="icons"
+                  src="../assets/images/github.png"
+                  alt="GitHub Profile"
+              /></a>
+              &nbsp;
+              <a href="https://twitter.com/nandanunni?s=09" target="_blank"
+                ><img
+                  class="icons"
+                  src="../assets/images/twitter.png"
+                  alt="Twitter Profile"
+              /></a>
+              &nbsp;
+              <a href="https://www.instagram.com/u.n.n.i._" target="_blank"
+                ><img
+                  class="icons"
+                  src="../assets/images/instagram.png"
+                  alt="IG Profile"
+              /></a>
+            </div>
+            <br />
+            <div
+              class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone"
+              style="width: 170px;"
+            >
+              <div
+                class="section__circle-container__circle mdl-color--accent section__circle--big"
+              >
+                <img
+                  class="profile"
+                  src="../assets/images/Abhinav Pic.jpg"
+                  alt="Abhinav's Pic"
+                />
+              </div>
+            </div>
+            <br /><br />
+            <div
+              class="section__text mdl-cell mdl-cell--4-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone"
+            >
+              <h5>Abhinav Rajesh</h5>
+              First Year B.Tech CSE @SOE, CUSAT <br /><br />
+              <a
+                href="https://https://www.linkedin.com/in/abhinav-rajesh-44b71b172/"
+                target="_blank"
+                ><img
+                  class="icons"
+                  src="../assets/images/linkedin.png"
+                  alt="LinkedIn Profile"
+              /></a>
+              &nbsp;
+              <a href="https://github.com/AbhinavRajesh/" target="_blank"
+                ><img
+                  class="icons"
+                  src="../assets/images/github.png"
+                  alt="GitHub Profile"
+              /></a>
+              &nbsp;
+              <a href="https://twitter.com/AbhinavRajesh9" target="_blank"
+                ><img
+                  class="icons"
+                  src="../assets/images/twitter.png"
+                  alt="Twitter Profile"
+              /></a>
+              &nbsp;
+              <a href="https://www.instagram.com/pv._abhinav_/" target="_blank"
+                ><img
+                  class="icons"
+                  src="../assets/images/instagram.png"
+                  alt="IG Profile"
+              /></a>
+            </div>
+          </section>
+        </div>
+        <div class="mdl-layout__tab-panel" id="details">
+          <section class="section--center mdl-grid mdl-grid--no-spacing">
+            <div class="mdl-cell mdl-cell--12-col">
+              <h4>Details</h4>
+              This page provides the information of the Corona Virus (
+              COVID-19), the symptoms, prevention and many more!
+              <ul class="toc">
+                <h4>Contents</h4>
+                <a href="#lorem1">What is COVID-19</a>
+                <a href="#lorem2"
+                  >Basic protective measures against the new coronavirus</a
+                >
+                <a href="#lorem3"
+                  >Protection measures for persons who are in or have recently
+                  visited (past 14 days) areas where COVID-19 is spreading</a
+                >
+                <a href="#lorem4">COVID-19 Myth busters</a>
+              </ul>
+              <h5 id="lorem1">What is COVID-19?</h5>
+              <p>
+                Coronavirus disease 2019 (COVID-19) is an infectious disease
+                caused by severe acute respiratory syndrome coronavirus 2
+                (SARS-CoV-2). The disease was first identified in 2019 in Wuhan,
+                the capital of Hubei, China, and has since spread globally,
+                resulting in the 2019–20 coronavirus pandemic. Common symptoms
+                include fever, cough, and shortness of breath. Muscle pain,
+                sputum production, diarrhea, and sore throat are less common.
+                While the majority of cases result in mild symptoms, some
+                progress to pneumonia and multi-organ failure
+              </p>
+              <b>More Information About COVID-19 : </b
+              ><a
+                href="https://www.who.int/health-topics/coronavirus/#tab=tab_1"
+                target="_blank"
+                >COVID-19</a
+              >
+              <h5 id="lorem2">
+                Basic protective measures against the new coronavirus
+              </h5>
+              Most people who become infected experience mild illness and
+              recover, but it can be more severe for others. Take care of your
+              health and protect others by doing the following Excepteur et
+              pariatur officia veniam anim culpa cupidatat consequat ad velit
+              culpa est non.
+              <ul>
+                <li>
+                  Wash your hands frequently.
+                </li>
+                <li>
+                  Maintain social distancing.
+                </li>
+                <li>
+                  Avoid touching eyes, nose and mouth.
+                </li>
+                <li>
+                  Practice respiratory hygiene.
+                </li>
+                <li>
+                  If you have fever, cough and difficulty breathing, seek
+                  medical care early.
+                </li>
+                <li>
+                  Stay informed and follow advice given by your healthcare
+                  provider.
+                </li>
+              </ul>
+
+              <h5 id="lorem3">
+                Protection measures for persons who are in or have recently
+                visited (past 14 days) areas where COVID-19 is spreading
+              </h5>
+              <p>
+                Stay at home if you begin to feel unwell, even with mild
+                symptoms such as headache and slight runny nose, until you
+                recover.<b> Why?</b> Avoiding contact with others and visits to
+                medical facilities will allow these facilities to operate more
+                effectively and help protect you and others from possible
+                COVID-19 and other viruses.
+              </p>
+              <p>
+                If you develop fever, cough and difficulty breathing, seek
+                medical advice promptly as this may be due to a respiratory
+                infection or other serious condition. Call in advance and tell
+                your provider of any recent travel or contact with travelers.<b>
+                  Why?</b
+                >
+                Calling in advance will allow your health care provider to
+                quickly direct you to the right health facility. This will also
+                help to prevent possible spread of COVID-19 and other viruses.
+              </p>
+              <p>
+                If you have any given symptoms try taking our
+                <a href="#test">Test!</a>
+              </p>
+              <h5 id="lorem4">
+                COVID-19 Myth busters
+              </h5>
+
+              <p>
+                1. From the evidence so far, the COVID-19 virus can be
+                transmitted in ALL AREAS, including areas with hot and humid
+                weather. Regardless of climate, adopt protective measures if you
+                live in, or travel to an area reporting COVID-19. The best way
+                to protect yourself against COVID-19 is by frequently cleaning
+                your hands. By doing this you eliminate viruses that may be on
+                your hands and avoid infection that could occur by then touching
+                your eyes, mouth, and nose.
+              </p>
+              <p>
+                2. There is no reason to believe that cold weather can kill the
+                new coronavirus or other diseases. The normal human body
+                temperature remains around 36.5°C to 37°C, regardless of the
+                external temperature or weather. The most effective way to
+                protect yourself against the new coronavirus is by frequently
+                cleaning your hands with alcohol-based hand rub or washing them
+                with soap and water.
+              </p>
+              <p>
+                3. To date there has been no information nor evidence to suggest
+                that the new coronavirus could be transmitted by mosquitoes. The
+                new coronavirus is a respiratory virus which spreads primarily
+                through droplets generated when an infected person coughs or
+                sneezes, or through droplets of saliva or discharge from the
+                nose. To protect yourself, clean your hands frequently with an
+                alcohol-based hand rub or wash them with soap and water. Also,
+                avoid close contact with anyone who is coughing and sneezing.
+              </p>
+              <p>
+                4. Hand dryers are not effective in killing the 2019-nCoV. To
+                protect yourself against the new coronavirus, you should
+                frequently clean your hands with an alcohol-based hand rub or
+                wash them with soap and water. Once your hands are cleaned, you
+                should dry them thoroughly by using paper towels or a warm air
+                dryer.
+              </p>
+              <p>
+                5. Spraying alcohol or chlorine all over your body will not kill
+                viruses that have already entered your body. Spraying such
+                substances can be harmful to clothes or mucous membranes (i.e.
+                eyes, mouth). Be aware that both alcohol and chlorine can be
+                useful to disinfect surfaces, but they need to be used under
+                appropriate recommendations.
+              </p>
+            </div>
+          </section>
+        </div>
+        <!--Test Tab below-->
+        <div class="mdl-layout__tab-panel" id="test" name="test">
+          <a name="test"></a>
+          <section class="section--center mdl-grid mdl-grid--no-spacing">
+            <div class="mdl-cell mdl-cell--12-col">
+              <h4>Test</h4>
+              <form action="/submit" method="POST">
+                <label for="name"><b>Name :</b></label>
+                <br /><br />
+                <input
+                  type="text"
+                  id="fname"
+                  name="fname"
+                  placeholder="First Name"
+                />
+                <br /><br />
+                <input
+                  type="text"
+                  id="lname"
+                  name="lname"
+                  placeholder="Last Name"
+                />
+                <br /><br />
+                <label for="address"><b>Address :</b></label>
+                <br /><br />
+                <input type="text" id="city" name="city" placeholder="City" />
+                <br /><br />
+                <input
+                  type="text"
+                  id="district"
+                  name="district"
+                  placeholder="District"
+                />
+                <br /><br />
+                <input
+                  type="text"
+                  id="state"
+                  name="state"
+                  placeholder="State"
+                />
+                <br /><br />
+                <input type="text" id="pin" name="pin" placeholder="PIN NO." />
+                <br /><br />
+                <label for="symptoms"><b>Symptoms :</b></label>
+                <br /><br />
+                <label
+                  class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect"
+                  for="Fever"
+                >
+                  <input
+                    type="checkbox"
+                    id="Fever"
+                    class="mdl-checkbox__input"
+                    value="Fever"
+                    name="Fever"
+                  />
+                  <span class="mdl-checkbox__label">Fever</span>
+                </label>
+                <label
+                  class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect"
+                  for="Tiredness"
+                >
+                  <input
+                    type="checkbox"
+                    id="Tiredness"
+                    class="mdl-checkbox__input"
+                    value="Tiredness"
+                    name="Tiredness"
+                  />
+                  <span class="mdl-checkbox__label">Tiredness</span>
+                </label>
+                <label
+                  class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect"
+                  for="Dry_cough"
+                >
+                  <input
+                    type="checkbox"
+                    id="Dry_cough"
+                    class="mdl-checkbox__input"
+                    value="Dry_cough"
+                    name="Dry_cough"
+                  />
+                  <span class="mdl-checkbox__label">Dry Cough</span>
+                </label>
+                <label
+                  class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect"
+                  for="Breath"
+                >
+                  <input
+                    type="checkbox"
+                    id="Breath"
+                    class="mdl-checkbox__input"
+                    value="Shortness of Breath"
+                    name="Breath"
+                  />
+                  <span class="mdl-checkbox__label">Shortness Of Breath</span>
+                </label>
+                <label
+                  class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect"
+                  for="Aches"
+                >
+                  <input
+                    type="checkbox"
+                    id="Aches"
+                    class="mdl-checkbox__input"
+                    value="Aches and Pain"
+                    name="Aches"
+                  />
+                  <span class="mdl-checkbox__label">Aches and Pains</span>
+                </label>
+                <label
+                  class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect"
+                  for="Sore_throat"
+                >
+                  <input
+                    type="checkbox"
+                    id="Sore_throat"
+                    class="mdl-checkbox__input"
+                    value="Sore_throat"
+                    name="Sore_throat"
+                  />
+                  <span class="mdl-checkbox__label">Sore Throat</span>
+                </label>
+                <label
+                  class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect"
+                  for="Tastelessness"
+                >
+                  <input
+                    type="checkbox"
+                    id="Tastelessness"
+                    class="mdl-checkbox__input"
+                    value="Tastelessness"
+                    name="Tastelessness"
+                  />
+                  <span class="mdl-checkbox__label">Tastelessness</span>
+                </label>
+                <br /><br />
+                <label for="enquiries"><b>Enquiries :</b></label>
+                <br /><br />
+                <label
+                  class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect"
+                  for="Corona"
+                >
+                  <input
+                    type="checkbox"
+                    id="Corona"
+                    class="mdl-checkbox__input"
+                    value="Corona"
+                    name="Corona"
+                  />
+                  <span class="mdl-checkbox__label"
+                    >Travelled Corona Affected Areas in past 14 days</span
+                  >
+                </label>
+                <br /><br />
+                <br /><br />
+                <br /><br />
+                <a href="./page2.ejs">
+                  <button
+                    class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+                  >
+                    Submit
+                  </button>
+                </a>
+                <br /><br />
+                <br /><br />
+                <br /><br />
+              </form>
+            </div>
+          </section>
+        </div>
+        <footer class="mdl-mega-footer">
+          <div class="mdl-mega-footer--middle-section">
+            <div class="mdl-mega-footer--drop-down-section">
+              <input
+                class="mdl-mega-footer--heading-checkbox"
+                type="checkbox"
+                checked
+              />
+              <h1
+                style="font-size: large; color: ghostwhite;"
+                class="mdl-mega-footer--heading"
+              >
+                Contact Ajal P @
+              </h1>
+              <ul
+                style="font-size: larger; color: ghostwhite;"
+                class="mdl-mega-footer--link-list"
+              >
+                <li>
+                  <img
+                    class="icon"
+                    src="../assets/images/mail.png"
+                    alt="Email:"
+                  />
+                  <a href="mailto:ajal.p1999@gmail.com">ajal.p1999@gmail.com</a>
+                </li>
+                <br />
+                <li>
+                  <img
+                    class="icon"
+                    src="../assets/images/Call.png"
+                    alt="Phone:"
+                  />
+                  9188692836
+                </li>
+              </ul>
+            </div>
+            <div class="mdl-mega-footer--drop-down-section">
+              <input
+                class="mdl-mega-footer--heading-checkbox"
+                type="checkbox"
+                checked
+              />
+              <h1
+                style="font-size: large ; color: ghostwhite;"
+                class="mdl-mega-footer--heading"
+              >
+                Contact AS Nandanunni @
+              </h1>
+              <ul
+                style="font-size: larger; color: ghostwhite;"
+                class="mdl-mega-footer--link-list"
+              >
+                <li>
+                  <img
+                    class="icon"
+                    src="../assets/images/mail.png"
+                    alt="Email:"
+                  />
+                  <a href="mailto:asnqln@gmail.com">asnqln@gmail.com</a>
+                </li>
+                <br />
+                <li>
+                  <img
+                    class="icon"
+                    src="../assets/images/Call.png"
+                    alt="Phone:"
+                  />
+                  9188750806
+                </li>
+              </ul>
+            </div>
+            <div class="mdl-mega-footer--drop-down-section">
+              <input
+                class="mdl-mega-footer--heading-checkbox"
+                type="checkbox"
+                checked
+              />
+              <h1
+                class="mdl-mega-footer--heading"
+                style="font-size: large; color: ghostwhite;"
+              >
+                Contact Abhinav Rajesh @
+              </h1>
+              <ul
+                style="font-size: larger; color: ghostwhite;"
+                class="mdl-mega-footer--link-list"
+              >
+                <li>
+                  <img
+                    class="icon"
+                    src="../assets/images/mail.png"
+                    alt="Email:"
+                  />
+                  <a href="mailto:abhinavrajesh49@gmail.com"
+                    >abhinavrajesh49@gmail.com</a
+                  >
+                </li>
+                <br />
+                <li>
+                  <img
+                    class="icon"
+                    src="../assets/images/Call.png"
+                    alt="Phone:"
+                  />
+                  8921473321
+                </li>
+              </ul>
+            </div>
+            <div class="mdl-mega-footer--drop-down-section"></div>
+          </div>
+          <div class="mdl-mega-footer--bottom-section"></div>
+        </footer>
+      </main>
+    </div>
+    <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  </body>
+</html>
